@@ -15,3 +15,18 @@ int multiplication(int arr[], int length){
     }
     return mult;
 }
+
+void main(){
+    int len;
+    printf("Enter number of elements in the array.");
+    scanf("%d", &len);
+
+    int arr[len];
+    printf("Enter elements of array: ");
+    for(int i=0; i < len; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Sum of array: %d\n", summation(arr, len));
+    printf("Product of array: %d\n", multiplication(arr, len));
+}

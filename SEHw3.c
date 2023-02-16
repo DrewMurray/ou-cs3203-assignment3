@@ -7,3 +7,11 @@ int summation(int arr[], int length){
     }
     return sum;
 }
+
+int multiplication(int arr[], int length){
+    int mult = 1;
+    for (int i = 0; i < length; i++){
+        mult = mult * arr[i];
+    }
+    return mult;
+}

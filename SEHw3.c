@@ -16,6 +16,14 @@ int multiplication(int arr[], int length){
     return mult;
 }
 
+int* reverse(int arr[], int length){
+    int* rev_arr = (int*)malloc(length * sizeof(int));;
+    for(int i=0; i < length; i++){
+        rev_arr[i] = arr[length-1-i]; 
+    }
+    return rev_arr;
+}
+
 void main(){
     int len;
     printf("Enter number of elements in the array.");

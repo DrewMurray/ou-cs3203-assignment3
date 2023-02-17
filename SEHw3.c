@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int summation(int arr[], int length){
     int sum = 0;
@@ -16,6 +17,14 @@ int multiplication(int arr[], int length){
     return mult;
 }
 
+int* reverse(int arr[], int length){
+    int* rev_arr = (int*)malloc(length * sizeof(int));;
+    for(int i=0; i < length; i++){
+        rev_arr[i] = arr[length-1-i]; 
+    }
+    return rev_arr;
+}
+
 void main(){
     int len;
     printf("Enter number of elements in the array.");
@@ -29,4 +38,8 @@ void main(){
 
     printf("Sum of array: %d\n", summation(arr, len));
     printf("Product of array: %d\n", multiplication(arr, len));
+    int* rev = reverse(arr, len); 
+    for(int i=0;i<len;i++){
+        printf("%d,", rev[i]);
+    }
 }

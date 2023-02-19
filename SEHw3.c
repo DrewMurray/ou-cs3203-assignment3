@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//sum all of the integers in an array
 int summation(int arr[], int length){
     int sum = 0;
     for (int i = 0; i < length; i++){
@@ -9,6 +10,7 @@ int summation(int arr[], int length){
     return sum;
 }
 
+//multiplies all integers in an array
 int multiplication(int arr[], int length){
     int mult = 1;
     for (int i = 0; i < length; i++){
